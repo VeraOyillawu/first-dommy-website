@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    color: white;
+    padding: 1.5rem 2rem;
+    background-color: rgb(19, 4, 41);
+}
+
+header{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 3rem;
+}
+
+header nav{
+    display: flex;
+    gap: 3rem;
+}
+
+header nav p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.image-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 6rem 0 0 0;
+}
+
+.image-text .text{
+    text-align: start;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.image-text .text h1{
+    filter: drop-shadow(4px 4px 4px  rgb(176, 9, 209));
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.image-text .text h1 span{
+    filter: drop-shadow(4px 4px 4px  rgb(9, 152, 209));
+}
+
+
+.image-text .text p{
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.image-text .text button{
+    width: 9rem;
+    background-color: rgb(22, 22, 241);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    height: 3rem;
+}
+
+.businessPage{
+    padding: 2rem;
+}
+
+.ecommerce-page{
+    padding: 5rem;
+    background-color: rgb(3, 4, 56);
+    /* background-color: darkblue; */
+    justify-content: space-around;
+    display: flex;
+}
+
+.star{
+    color: rgb(247, 232, 20);
+}
+
+.business-logo{
+    display: grid;
+    align-items: center;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.business-logo img{
+    object-fit: cover;
+}
+
+.icon-section{
+    padding: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.icon-section h1{
+    font-size: 2.5rem;
+}
+
+.icon-imgtext p{
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.icon-imgtext{
+    text-align: center;
+}
+
+.icon-imgtext img{
+    filter: drop-shadow(0 0 30px  rgb(10, 9, 110));
+    border-radius: 100vmax;
+}
+
+
+.icon-section .icons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 7.5rem;
+}
+
+.blur-textSection{
+   padding: 3rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 9rem;
+   margin-bottom: 7rem;
+}
+
+.headsection h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.headsection h3{
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.headsection h3::after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(90deg, blue,  rgb(183, 0, 255));
+    width: 20%;
+    left: 40%;
+    height: 4px;
+    bottom: -15px;
+}
+
+.headsection{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.blur-text{
+    display: flex;
+    gap: 3rem;
+}
+
+.blur{
+    flex-basis: 150%;
+    height: 30vh;
+    border-radius: 100vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blur-child{
+    width: 50%;
+    height: 20vh;border: 5px solid black;
+    height: 40vh;
+    background-color: rgba(107, 207, 207, 0.24);
+    border-radius: 100vmax;
+    background: blue;
+   filter: blur(100px);
+}
+
+.blur-text .text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.blur-text .text h5{
+    font-size: 1rem;
+    color: rgb(247, 12, 247);
+}
+
+.blur-text .text h3{
+    font-size: 2rem;
+}
+
+.blur-text .text p{
+    line-height: 2;
+}
+
+.blur-text .text a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.blur-text .text span{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.blur-text .text .box{
+    height: .8rem;
+    width: .7rem;
+    border: 1px solid white;
+}
+
+.blur-textSection2{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9rem;
+   margin-bottom: 10rem;
+}
+
+.blur-textSection2 .text{
+    order: -1;
+}
+
+.blur.blur3{
+    flex-basis: 90%;
+    height: 30vh;
+    border-radius: 100vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Potion_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+    gap: 2rem;
+}
+
+.potion{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.Potion_section .potion h1{
+    font-size: 2.1rem;
+    position: relative;
+    font-weight: 700;
+}
+
+.potion p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.potion h1::after{
+    content: "";
+    position: absolute;
+    background: yellow;
+    width: 25%;
+    left: 40%;
+    height: 3px;
+    bottom: -8px;
+}
+
+.potion_boxs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.potion_box{
+    background-color: rgb(34, 34, 80);
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border-radius: 6px;
+}
+
+.potion_box:hover{
+    background-color: rgb(60, 60, 92);
+}
+
+.potion_box h3{
+    font-size: 1.7rem;
+}
+
+.potion_box span{
+    display: flex;
+    text-align: start;
+    gap: 1rem;
+}
+
+.potion_box a{
+    text-decoration: none;
+    color: white    ;
+}
+
+.potion_box .box{
+    height: .5rem;
+    width: .4rem;
+    border: 1px solid yellow;
+}
+
+.cookie{
+    display: flex;
+    gap: 2rem;
+    padding: 6rem 5rem;
+}
+
+.cookieless{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.cookieless h1{
+    font-size: 4rem;
+}
+
+.cookie p{
+    line-height: 2;
+    font-weight: 550;
+    font-size: medium;
+}
+
+.cross_holder{
+    flex-basis: 180%;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cross{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.cross img{
+    object-fit: cover;
+}
+
+.discover{
+    margin-top: 4rem;
+    height: 100vh;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.discover h1{
+    font-size: 2rem;
+    color: white;
+}
+
+.discover p, a{
+    font-size: .9rem;
+    line-height: 25px;
+}
+
+.discover a{
+    font-size: .8rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.discoverImg_container{
+    border-radius: 6px;
+    height: 90vh;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.discover .discoverImg{
+    background-color: rgb(0, 23, 56);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.discover .discoverImg img{
+  /* height: 10rem; */
+}
+
+.discover .space{
+    height: 20rem;
+    width: 50rem;
+    flex-basis: 100%;
+    background-color: rgb(2, 25, 46);
+    width: 0%;
+    /* border: 5px solid white; */
+}
+
+.discover .text{
+    padding: 2.5rem;
+    background-color: rgb(4, 45, 83);
+}
+
+.discover .text2{
+    padding: 1rem;
+    background-color: rgb(4, 45, 83);
+}
+
+footer{
+    margin-top: 4rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footerContent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.content a{
+    text-decoration: none;
+    color: white;
+}
+
+.content input{
+    padding: .7rem 2rem;
+    position: relative;
+}
+
+.content .blue{
+    position: absolute;
+    border: none;
+    color: white;
+    height: 2.8rem;
+    width: 5rem;
+    top: 856.5%;
+    right: 13%;
+    background-color: blue;
+}
+
+
+@media (min-width: 760px) {
+    
+}
